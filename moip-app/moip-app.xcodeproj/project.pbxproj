@@ -1,0 +1,748 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		350AE84139ADC174BAE116FD /* Pods_moip_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33560CD65F3FE17071CB846D /* Pods_moip_app.framework */; };
+		6BED57DA96D6B4C3F3A49870 /* Pods_moip_appUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A89657314691A9025575AE7 /* Pods_moip_appUITests.framework */; };
+		ECB0AB55BD47CF3D0FC684B4 /* Pods_moip_appTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F07EBBA3C740C71D1C937E0F /* Pods_moip_appTests.framework */; };
+		F246DAD01DFD66ED007E9991 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F246DACF1DFD66ED007E9991 /* AppDelegate.swift */; };
+		F246DAD21DFD66ED007E9991 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F246DAD11DFD66ED007E9991 /* ViewController.swift */; };
+		F246DAD51DFD66ED007E9991 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F246DAD31DFD66ED007E9991 /* Main.storyboard */; };
+		F246DAD71DFD66ED007E9991 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F246DAD61DFD66ED007E9991 /* Assets.xcassets */; };
+		F246DADA1DFD66ED007E9991 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F246DAD81DFD66ED007E9991 /* LaunchScreen.storyboard */; };
+		F246DAE51DFD66ED007E9991 /* moip_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F246DAE41DFD66ED007E9991 /* moip_appTests.swift */; };
+		F246DAF01DFD66ED007E9991 /* moip_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F246DAEF1DFD66ED007E9991 /* moip_appUITests.swift */; };
+		F246DB011DFD6CC0007E9991 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F246DB001DFD6CC0007E9991 /* LoginController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F246DAE11DFD66ED007E9991 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F246DAC41DFD66EC007E9991 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F246DACB1DFD66EC007E9991;
+			remoteInfo = "moip-app";
+		};
+		F246DAEC1DFD66ED007E9991 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F246DAC41DFD66EC007E9991 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F246DACB1DFD66EC007E9991;
+			remoteInfo = "moip-app";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		33560CD65F3FE17071CB846D /* Pods_moip_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_moip_app.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A89657314691A9025575AE7 /* Pods_moip_appUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_moip_appUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5863B69C4F6AD25A779CDF04 /* Pods-moip-appUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-moip-appUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-moip-appUITests/Pods-moip-appUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		68EEE1AA01199A766040D056 /* Pods-moip-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-moip-app.release.xcconfig"; path = "Pods/Target Support Files/Pods-moip-app/Pods-moip-app.release.xcconfig"; sourceTree = "<group>"; };
+		6BB1E85286C4E9BF2FA933C3 /* Pods-moip-appTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-moip-appTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-moip-appTests/Pods-moip-appTests.debug.xcconfig"; sourceTree = "<group>"; };
+		74AFBFE3A604C25B2D14177E /* Pods-moip-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-moip-app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-moip-app/Pods-moip-app.debug.xcconfig"; sourceTree = "<group>"; };
+		A6F7EF9D83A789105EA66FE9 /* Pods-moip-appUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-moip-appUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-moip-appUITests/Pods-moip-appUITests.release.xcconfig"; sourceTree = "<group>"; };
+		C9E3F3ACE36DF1A1440B3DEE /* Pods-moip-appTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-moip-appTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-moip-appTests/Pods-moip-appTests.release.xcconfig"; sourceTree = "<group>"; };
+		F07EBBA3C740C71D1C937E0F /* Pods_moip_appTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_moip_appTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F246DACC1DFD66ED007E9991 /* moip-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "moip-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F246DACF1DFD66ED007E9991 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F246DAD11DFD66ED007E9991 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F246DAD41DFD66ED007E9991 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F246DAD61DFD66ED007E9991 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F246DAD91DFD66ED007E9991 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F246DADB1DFD66ED007E9991 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F246DAE01DFD66ED007E9991 /* moip-appTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "moip-appTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F246DAE41DFD66ED007E9991 /* moip_appTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moip_appTests.swift; sourceTree = "<group>"; };
+		F246DAE61DFD66ED007E9991 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F246DAEB1DFD66ED007E9991 /* moip-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "moip-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F246DAEF1DFD66ED007E9991 /* moip_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moip_appUITests.swift; sourceTree = "<group>"; };
+		F246DAF11DFD66ED007E9991 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F246DB001DFD6CC0007E9991 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F246DAC91DFD66EC007E9991 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				350AE84139ADC174BAE116FD /* Pods_moip_app.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F246DADD1DFD66ED007E9991 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECB0AB55BD47CF3D0FC684B4 /* Pods_moip_appTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F246DAE81DFD66ED007E9991 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6BED57DA96D6B4C3F3A49870 /* Pods_moip_appUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2D6C145CCF43242B33CCE7CA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				74AFBFE3A604C25B2D14177E /* Pods-moip-app.debug.xcconfig */,
+				68EEE1AA01199A766040D056 /* Pods-moip-app.release.xcconfig */,
+				6BB1E85286C4E9BF2FA933C3 /* Pods-moip-appTests.debug.xcconfig */,
+				C9E3F3ACE36DF1A1440B3DEE /* Pods-moip-appTests.release.xcconfig */,
+				5863B69C4F6AD25A779CDF04 /* Pods-moip-appUITests.debug.xcconfig */,
+				A6F7EF9D83A789105EA66FE9 /* Pods-moip-appUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F246DAC31DFD66EC007E9991 = {
+			isa = PBXGroup;
+			children = (
+				F246DACE1DFD66ED007E9991 /* moip-app */,
+				F246DAE31DFD66ED007E9991 /* moip-appTests */,
+				F246DAEE1DFD66ED007E9991 /* moip-appUITests */,
+				F246DACD1DFD66ED007E9991 /* Products */,
+				2D6C145CCF43242B33CCE7CA /* Pods */,
+				FAA9B95155FE8967477BA1F8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F246DACD1DFD66ED007E9991 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F246DACC1DFD66ED007E9991 /* moip-app.app */,
+				F246DAE01DFD66ED007E9991 /* moip-appTests.xctest */,
+				F246DAEB1DFD66ED007E9991 /* moip-appUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F246DACE1DFD66ED007E9991 /* moip-app */ = {
+			isa = PBXGroup;
+			children = (
+				F246DAFF1DFD6C23007E9991 /* controller */,
+				F246DAFE1DFD6C1A007E9991 /* view */,
+				F246DAFD1DFD6C12007E9991 /* model */,
+				F246DACF1DFD66ED007E9991 /* AppDelegate.swift */,
+				F246DAD11DFD66ED007E9991 /* ViewController.swift */,
+				F246DAD31DFD66ED007E9991 /* Main.storyboard */,
+				F246DAD61DFD66ED007E9991 /* Assets.xcassets */,
+				F246DAD81DFD66ED007E9991 /* LaunchScreen.storyboard */,
+				F246DADB1DFD66ED007E9991 /* Info.plist */,
+			);
+			path = "moip-app";
+			sourceTree = "<group>";
+		};
+		F246DAE31DFD66ED007E9991 /* moip-appTests */ = {
+			isa = PBXGroup;
+			children = (
+				F246DAE41DFD66ED007E9991 /* moip_appTests.swift */,
+				F246DAE61DFD66ED007E9991 /* Info.plist */,
+			);
+			path = "moip-appTests";
+			sourceTree = "<group>";
+		};
+		F246DAEE1DFD66ED007E9991 /* moip-appUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F246DAEF1DFD66ED007E9991 /* moip_appUITests.swift */,
+				F246DAF11DFD66ED007E9991 /* Info.plist */,
+			);
+			path = "moip-appUITests";
+			sourceTree = "<group>";
+		};
+		F246DAFD1DFD6C12007E9991 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		F246DAFE1DFD6C1A007E9991 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		F246DAFF1DFD6C23007E9991 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				F246DB001DFD6CC0007E9991 /* LoginController.swift */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+		FAA9B95155FE8967477BA1F8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				33560CD65F3FE17071CB846D /* Pods_moip_app.framework */,
+				F07EBBA3C740C71D1C937E0F /* Pods_moip_appTests.framework */,
+				3A89657314691A9025575AE7 /* Pods_moip_appUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F246DACB1DFD66EC007E9991 /* moip-app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F246DAF41DFD66ED007E9991 /* Build configuration list for PBXNativeTarget "moip-app" */;
+			buildPhases = (
+				1B2C6AF1320D10181303140D /* [CP] Check Pods Manifest.lock */,
+				F246DAC81DFD66EC007E9991 /* Sources */,
+				F246DAC91DFD66EC007E9991 /* Frameworks */,
+				F246DACA1DFD66EC007E9991 /* Resources */,
+				5C2937DE81AD8DDECD6632E3 /* [CP] Embed Pods Frameworks */,
+				506B21E2BB2B1DA5F73D72CE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "moip-app";
+			productName = "moip-app";
+			productReference = F246DACC1DFD66ED007E9991 /* moip-app.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F246DADF1DFD66ED007E9991 /* moip-appTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F246DAF71DFD66ED007E9991 /* Build configuration list for PBXNativeTarget "moip-appTests" */;
+			buildPhases = (
+				004C30737848401BA3FAFFBA /* [CP] Check Pods Manifest.lock */,
+				F246DADC1DFD66ED007E9991 /* Sources */,
+				F246DADD1DFD66ED007E9991 /* Frameworks */,
+				F246DADE1DFD66ED007E9991 /* Resources */,
+				2382F8A3AF073B6C0ABC300D /* [CP] Embed Pods Frameworks */,
+				8DDE78DFB7DF0B49144BD511 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F246DAE21DFD66ED007E9991 /* PBXTargetDependency */,
+			);
+			name = "moip-appTests";
+			productName = "moip-appTests";
+			productReference = F246DAE01DFD66ED007E9991 /* moip-appTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F246DAEA1DFD66ED007E9991 /* moip-appUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F246DAFA1DFD66ED007E9991 /* Build configuration list for PBXNativeTarget "moip-appUITests" */;
+			buildPhases = (
+				4C4C05E6AD31AF73B68F6E81 /* [CP] Check Pods Manifest.lock */,
+				F246DAE71DFD66ED007E9991 /* Sources */,
+				F246DAE81DFD66ED007E9991 /* Frameworks */,
+				F246DAE91DFD66ED007E9991 /* Resources */,
+				2F6233A02583B7C74511DA26 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F246DAED1DFD66ED007E9991 /* PBXTargetDependency */,
+			);
+			name = "moip-appUITests";
+			productName = "moip-appUITests";
+			productReference = F246DAEB1DFD66ED007E9991 /* moip-appUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F246DAC41DFD66EC007E9991 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Humberto Vieira";
+				TargetAttributes = {
+					F246DACB1DFD66EC007E9991 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 7SCH5Y74F7;
+						LastSwiftMigration = 0810;
+						ProvisioningStyle = Automatic;
+					};
+					F246DADF1DFD66ED007E9991 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 7SCH5Y74F7;
+						LastSwiftMigration = 0810;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F246DACB1DFD66EC007E9991;
+					};
+					F246DAEA1DFD66ED007E9991 = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = 7SCH5Y74F7;
+						LastSwiftMigration = 0810;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F246DACB1DFD66EC007E9991;
+					};
+				};
+			};
+			buildConfigurationList = F246DAC71DFD66EC007E9991 /* Build configuration list for PBXProject "moip-app" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F246DAC31DFD66EC007E9991;
+			productRefGroup = F246DACD1DFD66ED007E9991 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F246DACB1DFD66EC007E9991 /* moip-app */,
+				F246DADF1DFD66ED007E9991 /* moip-appTests */,
+				F246DAEA1DFD66ED007E9991 /* moip-appUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F246DACA1DFD66EC007E9991 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F246DADA1DFD66ED007E9991 /* LaunchScreen.storyboard in Resources */,
+				F246DAD71DFD66ED007E9991 /* Assets.xcassets in Resources */,
+				F246DAD51DFD66ED007E9991 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F246DADE1DFD66ED007E9991 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F246DAE91DFD66ED007E9991 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		004C30737848401BA3FAFFBA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1B2C6AF1320D10181303140D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2382F8A3AF073B6C0ABC300D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-moip-appTests/Pods-moip-appTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2F6233A02583B7C74511DA26 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-moip-appUITests/Pods-moip-appUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C4C05E6AD31AF73B68F6E81 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		506B21E2BB2B1DA5F73D72CE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-moip-app/Pods-moip-app-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C2937DE81AD8DDECD6632E3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-moip-app/Pods-moip-app-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8DDE78DFB7DF0B49144BD511 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-moip-appTests/Pods-moip-appTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F246DAC81DFD66EC007E9991 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F246DAD21DFD66ED007E9991 /* ViewController.swift in Sources */,
+				F246DB011DFD6CC0007E9991 /* LoginController.swift in Sources */,
+				F246DAD01DFD66ED007E9991 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F246DADC1DFD66ED007E9991 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F246DAE51DFD66ED007E9991 /* moip_appTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F246DAE71DFD66ED007E9991 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F246DAF01DFD66ED007E9991 /* moip_appUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F246DAE21DFD66ED007E9991 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F246DACB1DFD66EC007E9991 /* moip-app */;
+			targetProxy = F246DAE11DFD66ED007E9991 /* PBXContainerItemProxy */;
+		};
+		F246DAED1DFD66ED007E9991 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F246DACB1DFD66EC007E9991 /* moip-app */;
+			targetProxy = F246DAEC1DFD66ED007E9991 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F246DAD31DFD66ED007E9991 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F246DAD41DFD66ED007E9991 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F246DAD81DFD66ED007E9991 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F246DAD91DFD66ED007E9991 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F246DAF21DFD66ED007E9991 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F246DAF31DFD66ED007E9991 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F246DAF51DFD66ED007E9991 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 74AFBFE3A604C25B2D14177E /* Pods-moip-app.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7SCH5Y74F7;
+				INFOPLIST_FILE = "moip-app/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.afrodev.moip-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F246DAF61DFD66ED007E9991 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68EEE1AA01199A766040D056 /* Pods-moip-app.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7SCH5Y74F7;
+				INFOPLIST_FILE = "moip-app/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.afrodev.moip-app";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		F246DAF81DFD66ED007E9991 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BB1E85286C4E9BF2FA933C3 /* Pods-moip-appTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 7SCH5Y74F7;
+				INFOPLIST_FILE = "moip-appTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.afrodev.moip-appTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/moip-app.app/moip-app";
+			};
+			name = Debug;
+		};
+		F246DAF91DFD66ED007E9991 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9E3F3ACE36DF1A1440B3DEE /* Pods-moip-appTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 7SCH5Y74F7;
+				INFOPLIST_FILE = "moip-appTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.afrodev.moip-appTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/moip-app.app/moip-app";
+			};
+			name = Release;
+		};
+		F246DAFB1DFD66ED007E9991 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5863B69C4F6AD25A779CDF04 /* Pods-moip-appUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 7SCH5Y74F7;
+				INFOPLIST_FILE = "moip-appUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.afrodev.moip-appUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "moip-app";
+			};
+			name = Debug;
+		};
+		F246DAFC1DFD66ED007E9991 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6F7EF9D83A789105EA66FE9 /* Pods-moip-appUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 7SCH5Y74F7;
+				INFOPLIST_FILE = "moip-appUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.afrodev.moip-appUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "moip-app";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F246DAC71DFD66EC007E9991 /* Build configuration list for PBXProject "moip-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F246DAF21DFD66ED007E9991 /* Debug */,
+				F246DAF31DFD66ED007E9991 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F246DAF41DFD66ED007E9991 /* Build configuration list for PBXNativeTarget "moip-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F246DAF51DFD66ED007E9991 /* Debug */,
+				F246DAF61DFD66ED007E9991 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F246DAF71DFD66ED007E9991 /* Build configuration list for PBXNativeTarget "moip-appTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F246DAF81DFD66ED007E9991 /* Debug */,
+				F246DAF91DFD66ED007E9991 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F246DAFA1DFD66ED007E9991 /* Build configuration list for PBXNativeTarget "moip-appUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F246DAFB1DFD66ED007E9991 /* Debug */,
+				F246DAFC1DFD66ED007E9991 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F246DAC41DFD66EC007E9991 /* Project object */;
+}
