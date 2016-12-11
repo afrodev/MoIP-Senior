@@ -11,13 +11,15 @@
 		6BED57DA96D6B4C3F3A49870 /* Pods_moip_appUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A89657314691A9025575AE7 /* Pods_moip_appUITests.framework */; };
 		ECB0AB55BD47CF3D0FC684B4 /* Pods_moip_appTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F07EBBA3C740C71D1C937E0F /* Pods_moip_appTests.framework */; };
 		F246DAD01DFD66ED007E9991 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F246DACF1DFD66ED007E9991 /* AppDelegate.swift */; };
-		F246DAD21DFD66ED007E9991 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F246DAD11DFD66ED007E9991 /* ViewController.swift */; };
+		F246DAD21DFD66ED007E9991 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F246DAD11DFD66ED007E9991 /* LoginViewController.swift */; };
 		F246DAD51DFD66ED007E9991 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F246DAD31DFD66ED007E9991 /* Main.storyboard */; };
 		F246DAD71DFD66ED007E9991 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F246DAD61DFD66ED007E9991 /* Assets.xcassets */; };
 		F246DADA1DFD66ED007E9991 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F246DAD81DFD66ED007E9991 /* LaunchScreen.storyboard */; };
 		F246DAE51DFD66ED007E9991 /* moip_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F246DAE41DFD66ED007E9991 /* moip_appTests.swift */; };
 		F246DAF01DFD66ED007E9991 /* moip_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F246DAEF1DFD66ED007E9991 /* moip_appUITests.swift */; };
 		F246DB011DFD6CC0007E9991 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F246DB001DFD6CC0007E9991 /* LoginController.swift */; };
+		F2B5C6261DFD95FC00573B9E /* OrdersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B5C6251DFD95FC00573B9E /* OrdersTableViewController.swift */; };
+		F2B5C6281DFDAAE300573B9E /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B5C6271DFDAAE300573B9E /* CustomTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +51,7 @@
 		F07EBBA3C740C71D1C937E0F /* Pods_moip_appTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_moip_appTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F246DACC1DFD66ED007E9991 /* moip-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "moip-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F246DACF1DFD66ED007E9991 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F246DAD11DFD66ED007E9991 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F246DAD11DFD66ED007E9991 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F246DAD41DFD66ED007E9991 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F246DAD61DFD66ED007E9991 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F246DAD91DFD66ED007E9991 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,6 +63,8 @@
 		F246DAEF1DFD66ED007E9991 /* moip_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moip_appUITests.swift; sourceTree = "<group>"; };
 		F246DAF11DFD66ED007E9991 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F246DB001DFD6CC0007E9991 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		F2B5C6251DFD95FC00573B9E /* OrdersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrdersTableViewController.swift; sourceTree = "<group>"; };
+		F2B5C6271DFDAAE300573B9E /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,7 +137,6 @@
 				F246DAFE1DFD6C1A007E9991 /* view */,
 				F246DAFD1DFD6C12007E9991 /* model */,
 				F246DACF1DFD66ED007E9991 /* AppDelegate.swift */,
-				F246DAD11DFD66ED007E9991 /* ViewController.swift */,
 				F246DAD31DFD66ED007E9991 /* Main.storyboard */,
 				F246DAD61DFD66ED007E9991 /* Assets.xcassets */,
 				F246DAD81DFD66ED007E9991 /* LaunchScreen.storyboard */,
@@ -170,6 +173,9 @@
 		F246DAFE1DFD6C1A007E9991 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				F246DAD11DFD66ED007E9991 /* LoginViewController.swift */,
+				F2B5C6251DFD95FC00573B9E /* OrdersTableViewController.swift */,
+				F2B5C6271DFDAAE300573B9E /* CustomTextField.swift */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -268,7 +274,7 @@
 				TargetAttributes = {
 					F246DACB1DFD66EC007E9991 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 7SCH5Y74F7;
+						DevelopmentTeam = LCZDDBK62C;
 						LastSwiftMigration = 0810;
 						ProvisioningStyle = Automatic;
 					};
@@ -463,9 +469,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F246DAD21DFD66ED007E9991 /* ViewController.swift in Sources */,
+				F2B5C6261DFD95FC00573B9E /* OrdersTableViewController.swift in Sources */,
+				F246DAD21DFD66ED007E9991 /* LoginViewController.swift in Sources */,
 				F246DB011DFD6CC0007E9991 /* LoginController.swift in Sources */,
 				F246DAD01DFD66ED007E9991 /* AppDelegate.swift in Sources */,
+				F2B5C6281DFDAAE300573B9E /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -618,7 +626,7 @@
 			baseConfigurationReference = 74AFBFE3A604C25B2D14177E /* Pods-moip-app.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 7SCH5Y74F7;
+				DEVELOPMENT_TEAM = LCZDDBK62C;
 				INFOPLIST_FILE = "moip-app/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.afrodev.moip-app";
@@ -632,7 +640,7 @@
 			baseConfigurationReference = 68EEE1AA01199A766040D056 /* Pods-moip-app.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 7SCH5Y74F7;
+				DEVELOPMENT_TEAM = LCZDDBK62C;
 				INFOPLIST_FILE = "moip-app/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "br.com.afrodev.moip-app";
