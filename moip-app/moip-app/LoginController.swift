@@ -14,10 +14,6 @@ protocol LoginProtocol {
     func finishLogin(access_token: String)
 }
 
-protocol OrderProtocol {
-    func finishOrders(list: [String: Any])
-}
-
 class LoginController: NSObject {
     var delegateLogin: LoginProtocol?
     var delegateOrder: OrderProtocol?
@@ -45,30 +41,7 @@ class LoginController: NSObject {
         }
     }
     
-    func order(access_token: String) {
-        print(access_token)
-        let headers: HTTPHeaders = [
-            "Accept": "application/json",
-            "Authorization": "OAuth \(access_token)"
-        ]
-        //print(headers)
         
-        
-        /*
-            what i need:
-            - ownId
-            - email
-            - payment method (enum)
-            - status (enum)
-            - createdAt (date)
-         */
-        Alamofire.request("https://sandbox.moip.com.br/v2/orders?limit=1", headers: headers).responseJSON { response in
-            print(response)
-        }
-        
-        
-    }
-    
     
     
 }

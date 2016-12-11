@@ -17,7 +17,7 @@ class CustomTextField: UITextField {
     // Only override draw() if you perform custom drawing.
     // An empty implementation adversely affects performance during animation.
     override func draw(_ rect: CGRect) {
-    
+
         
         self.leftViewMode = .always
         
@@ -27,6 +27,7 @@ class CustomTextField: UITextField {
         self.leftView = imageView
         
         setBottomBorder(borderColor: .white)
+        self.clearsOnBeginEditing = true
         
     }
     

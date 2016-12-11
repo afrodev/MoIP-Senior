@@ -19,16 +19,16 @@ class LoginViewController: UIViewController, LoginProtocol {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationController?.navigationBar.isHidden = true
 
         // Dimiss Keyboard touching anywhere
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
 
-        
         controller.delegateLogin = self
-        
+
         emailTextfield.leftImage = UIImage(named: "email-icon")
-        
         passwordTextField.leftImage = UIImage(named: "password-icon")
         
         
@@ -50,12 +50,13 @@ class LoginViewController: UIViewController, LoginProtocol {
         let orderVC = OrdersTableViewController()
         orderVC.access_token = access_token
         
-        self.present(orderVC, animated: true, completion: nil)
+        let navigationVC = UINavigationController(rootViewController: orderVC)
+        self.present(navigationVC, animated: true, completion: nil)
         
     }
 
-
-
+ 
+    
     
 
 }

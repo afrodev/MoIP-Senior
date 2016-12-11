@@ -8,21 +8,28 @@
 
 import UIKit
 
-class OrdersTableViewController: UITableViewController {
+class OrdersTableViewController: UITableViewController, OrderProtocol {
 
     var access_token: String = ""
+    let controller = OrderController()
+    var orderArray: [Order] = []
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         print("Access Token: \(access_token)")
         
-        LoginController().order(access_token: access_token)
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
+        self.navigationController?.navigationBar.topItem?.title = "Vendas"
+        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
+        self.navigationController?.navigationBar.barTintColor = UIColor(colorLiteralRed: 0, green: 153/255.0, blue: 224/255.0, alpha: 1.0)
+        
+        self.tableView.register(OrderCell.self, forCellReuseIdentifier: "cellOrder")
+        
+        controller.delegate = self
+        controller.order(access_token: access_token)
 
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
 
     override func didReceiveMemoryWarning() {
@@ -39,18 +46,22 @@ class OrdersTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        return orderArray.count
+    }
+    
+    func finishOrders(list: [Order]) {
+        orderArray = list
+        
+        self.tableView.reloadData()
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cellOrder", for: indexPath) as! OrderCell
+        
         return cell
     }
-    */
+    
 
     /*
     // Override to support conditional editing of the table view.
