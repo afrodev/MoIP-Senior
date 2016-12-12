@@ -19,7 +19,8 @@ class OrderController: NSObject {
     
     
     func order(access_token: String) {
-        print(access_token)
+        var arrayOrder: [Order] = []
+        
         let headers: HTTPHeaders = [
             "Accept": "application/json",
             "Authorization": "OAuth \(access_token)"
@@ -35,8 +36,21 @@ class OrderController: NSObject {
          - createdAt (date)
          
          */
-        Alamofire.request("https://sandbox.moip.com.br/v2/orders?limit=1", headers: headers).responseJSON { response in
-            print(response)
+        Alamofire.request("https://sandbox.moip.com.br/v2/orders?limit=100", headers: headers).responseJSON { response in
+            // print(response)
+            
+            let json = JSON(data: response.data!)
+            let orders = json["orders"]
+            
+            
+            for o in orders {
+                let order = Order(json: o.1)
+                
+                arrayOrder.append(order)
+            }
+            
+            
+            
             self.delegate?.finishOrders(list: [])
         }
         
