@@ -284,20 +284,20 @@
 					F246DACB1DFD66EC007E9991 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = LCZDDBK62C;
-						LastSwiftMigration = 0810;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					F246DADF1DFD66ED007E9991 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 7SCH5Y74F7;
-						LastSwiftMigration = 0810;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 						TestTargetID = F246DACB1DFD66EC007E9991;
 					};
 					F246DAEA1DFD66ED007E9991 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 7SCH5Y74F7;
-						LastSwiftMigration = 0810;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 						TestTargetID = F246DACB1DFD66EC007E9991;
 					};

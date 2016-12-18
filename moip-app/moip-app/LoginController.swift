@@ -11,14 +11,14 @@ import Alamofire
 import SwiftyJSON
 
 protocol LoginProtocol {
-    func finishLogin(access_token: String)
+    func finishLogin(_ access_token: String)
 }
 
 class LoginController: NSObject {
     var delegateLogin: LoginProtocol?
     var delegateOrder: OrderProtocol?
     
-    func login(username: String, password: String) {
+    func login(_ username: String, password: String) {
         
         let parameters: Parameters = [
             "appId": "APP-YYOOK4LMHJS8",
@@ -35,7 +35,7 @@ class LoginController: NSObject {
                 let json = JSON(data: response.data!)
                 let access_token = json["access_token"]
                 
-                self.delegateLogin?.finishLogin(access_token: "\(access_token)")
+                self.delegateLogin?.finishLogin("\(access_token)")
             }
             
         }

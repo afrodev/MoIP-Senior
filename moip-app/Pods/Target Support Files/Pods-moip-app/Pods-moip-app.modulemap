@@ -1,0 +1,6 @@
+framework module Pods_moip_app {
+  umbrella header "Pods-moip-app-umbrella.h"
+
+  export *
+  module * { export * }
+}

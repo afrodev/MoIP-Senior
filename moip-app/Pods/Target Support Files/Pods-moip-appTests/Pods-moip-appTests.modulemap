@@ -1,0 +1,6 @@
+framework module Pods_moip_appTests {
+  umbrella header "Pods-moip-appTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

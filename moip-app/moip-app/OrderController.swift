@@ -11,14 +11,14 @@ import Alamofire
 import SwiftyJSON
 
 protocol OrderProtocol {
-    func finishOrders(list: [Order])
+    func finishOrders(_ list: [Order])
 }
 
 class OrderController: NSObject {
     var delegate: OrderProtocol?
     
     
-    func order(access_token: String) {
+    func order(_ access_token: String) {
         var arrayOrder: [Order] = []
         
         let headers: HTTPHeaders = [
@@ -51,7 +51,7 @@ class OrderController: NSObject {
             
             
             
-            self.delegate?.finishOrders(list: [])
+            self.delegate?.finishOrders([])
         }
         
         

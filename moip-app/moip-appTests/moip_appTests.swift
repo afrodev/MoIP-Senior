@@ -7,7 +7,6 @@
 //
 
 import XCTest
-@testable import moip_app
 
 class moip_appTests: XCTestCase {
     

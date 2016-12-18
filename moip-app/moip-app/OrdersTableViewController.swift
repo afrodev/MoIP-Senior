@@ -28,7 +28,7 @@ class OrdersTableViewController: UITableViewController, OrderProtocol {
         self.tableView.register(OrderCell.self, forCellReuseIdentifier: "cellOrder")
         
         controller.delegate = self
-        controller.order(access_token: access_token)
+        controller.order(access_token)
 
     }
 
@@ -49,7 +49,7 @@ class OrdersTableViewController: UITableViewController, OrderProtocol {
         return orderArray.count
     }
     
-    func finishOrders(list: [Order]) {
+    func finishOrders(_ list: [Order]) {
         orderArray = list
         
         self.tableView.reloadData()

@@ -26,13 +26,13 @@ class CustomTextField: UITextField {
         imageView.image = leftImage
         self.leftView = imageView
         
-        setBottomBorder(borderColor: .white)
+        setBottomBorder(.white)
         self.clearsOnBeginEditing = true
         
     }
     
     
-    func setBottomBorder(borderColor: UIColor)
+    func setBottomBorder(_ borderColor: UIColor)
     {
         self.borderStyle = UITextBorderStyle.none
         self.backgroundColor = UIColor.clear

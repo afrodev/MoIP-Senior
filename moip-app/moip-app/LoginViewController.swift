@@ -42,11 +42,11 @@ class LoginViewController: UIViewController, LoginProtocol {
     
     @IBAction func actionLogin(_ sender: Any) {
         print("Login")
-        controller.login(username: "integracao@labs.moip.com.br", password: "testemoip")
+        controller.login("integracao@labs.moip.com.br", password: "testemoip")
         
     }
     
-    func finishLogin(access_token: String) {
+    func finishLogin(_ access_token: String) {
         let orderVC = OrdersTableViewController()
         orderVC.access_token = access_token
         
