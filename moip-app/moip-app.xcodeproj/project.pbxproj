@@ -12,7 +12,6 @@
 		ECB0AB55BD47CF3D0FC684B4 /* Pods_moip_appTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F07EBBA3C740C71D1C937E0F /* Pods_moip_appTests.framework */; };
 		F234F5901DFDF74C0070C530 /* OrderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F234F58F1DFDF74C0070C530 /* OrderController.swift */; };
 		F234F5921DFDF88C0070C530 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = F234F5911DFDF88C0070C530 /* Order.swift */; };
-		F234F5971DFE01610070C530 /* OrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F234F5951DFE01610070C530 /* OrderCell.swift */; };
 		F246DAD01DFD66ED007E9991 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F246DACF1DFD66ED007E9991 /* AppDelegate.swift */; };
 		F246DAD21DFD66ED007E9991 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F246DAD11DFD66ED007E9991 /* LoginViewController.swift */; };
 		F246DAD51DFD66ED007E9991 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F246DAD31DFD66ED007E9991 /* Main.storyboard */; };
@@ -23,6 +22,8 @@
 		F246DB011DFD6CC0007E9991 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F246DB001DFD6CC0007E9991 /* LoginController.swift */; };
 		F2B5C6261DFD95FC00573B9E /* OrdersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B5C6251DFD95FC00573B9E /* OrdersTableViewController.swift */; };
 		F2B5C6281DFDAAE300573B9E /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B5C6271DFDAAE300573B9E /* CustomTextField.swift */; };
+		F2DE95E61E074DC700D865F4 /* OrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DE95E51E074DC700D865F4 /* OrderTableViewCell.swift */; };
+		F2DE95EA1E07512900D865F4 /* OrderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2DE95E91E07512900D865F4 /* OrderCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +55,6 @@
 		F07EBBA3C740C71D1C937E0F /* Pods_moip_appTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_moip_appTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F234F58F1DFDF74C0070C530 /* OrderController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderController.swift; sourceTree = "<group>"; };
 		F234F5911DFDF88C0070C530 /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
-		F234F5951DFE01610070C530 /* OrderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderCell.swift; sourceTree = "<group>"; };
 		F246DACC1DFD66ED007E9991 /* moip-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "moip-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F246DACF1DFD66ED007E9991 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F246DAD11DFD66ED007E9991 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +71,8 @@
 		F246DB001DFD6CC0007E9991 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		F2B5C6251DFD95FC00573B9E /* OrdersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrdersTableViewController.swift; sourceTree = "<group>"; };
 		F2B5C6271DFDAAE300573B9E /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		F2DE95E51E074DC700D865F4 /* OrderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderTableViewCell.swift; sourceTree = "<group>"; };
+		F2DE95E91E07512900D865F4 /* OrderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,7 +185,8 @@
 				F246DAD11DFD66ED007E9991 /* LoginViewController.swift */,
 				F2B5C6251DFD95FC00573B9E /* OrdersTableViewController.swift */,
 				F2B5C6271DFDAAE300573B9E /* CustomTextField.swift */,
-				F234F5951DFE01610070C530 /* OrderCell.swift */,
+				F2DE95E51E074DC700D865F4 /* OrderTableViewCell.swift */,
+				F2DE95E91E07512900D865F4 /* OrderCell.xib */,
 			);
 			name = view;
 			sourceTree = "<group>";
@@ -330,6 +333,7 @@
 			files = (
 				F246DADA1DFD66ED007E9991 /* LaunchScreen.storyboard in Resources */,
 				F246DAD71DFD66ED007E9991 /* Assets.xcassets in Resources */,
+				F2DE95EA1E07512900D865F4 /* OrderCell.xib in Resources */,
 				F246DAD51DFD66ED007E9991 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -480,8 +484,8 @@
 			files = (
 				F234F5901DFDF74C0070C530 /* OrderController.swift in Sources */,
 				F2B5C6261DFD95FC00573B9E /* OrdersTableViewController.swift in Sources */,
+				F2DE95E61E074DC700D865F4 /* OrderTableViewCell.swift in Sources */,
 				F246DAD21DFD66ED007E9991 /* LoginViewController.swift in Sources */,
-				F234F5971DFE01610070C530 /* OrderCell.swift in Sources */,
 				F246DB011DFD6CC0007E9991 /* LoginController.swift in Sources */,
 				F246DAD01DFD66ED007E9991 /* AppDelegate.swift in Sources */,
 				F2B5C6281DFDAAE300573B9E /* CustomTextField.swift in Sources */,

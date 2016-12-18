@@ -8,13 +8,11 @@
 
 import UIKit
 
-class OrdersTableViewController: UITableViewController, OrderProtocol {
+class OrdersTableViewController: UITableViewController,  OrderProtocol {
 
     var access_token: String = ""
     let controller = OrderController()
     var orderArray: [Order] = []
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,7 +23,8 @@ class OrdersTableViewController: UITableViewController, OrderProtocol {
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
         self.navigationController?.navigationBar.barTintColor = UIColor(colorLiteralRed: 0, green: 153/255.0, blue: 224/255.0, alpha: 1.0)
         
-        self.tableView.register(OrderCell.self, forCellReuseIdentifier: "cellOrder")
+        let a = UINib(nibName: "OrderCell", bundle: nil)
+        self.tableView.register(a, forCellReuseIdentifier: "cellOrderNew")
         
         controller.delegate = self
         controller.order(access_token)
@@ -38,14 +37,13 @@ class OrdersTableViewController: UITableViewController, OrderProtocol {
     }
 
     // MARK: - Table view data source
-
     override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
+
         return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
+
         return orderArray.count
     }
     
@@ -57,12 +55,17 @@ class OrdersTableViewController: UITableViewController, OrderProtocol {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cellOrder", for: indexPath) as! OrderCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cellOrderNew", for: indexPath) as! OrderTableViewCell
+        
+        cell.labelCreateDate.text = "asdafs"
+        
         
         return cell
     }
     
-
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 128.0
+    }
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {

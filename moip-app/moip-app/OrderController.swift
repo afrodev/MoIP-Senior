@@ -51,7 +51,7 @@ class OrderController: NSObject {
             
             
             
-            self.delegate?.finishOrders([])
+            self.delegate?.finishOrders(arrayOrder)
         }
         
         
