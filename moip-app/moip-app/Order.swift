@@ -12,6 +12,7 @@ import SwiftyJSON
 enum PaymentMethod {
     case bankBill
     case creditCard
+    case onlineBankDebit
 }
 
 enum Status {
@@ -27,6 +28,7 @@ class Order {
     var paymentMethod: PaymentMethod?
     var status: Status?
     var updatedAt: Date?
+    var price: Double?
     
     
     init(json: JSON) {
@@ -35,12 +37,15 @@ class Order {
         self.ownID = json["ownId"].string
         self.email = json["customer"]["email"].string
         
-        let payments = json["payments"]["fundingInstrument"]["method"].string
+        let payments = json["payments"][0]["fundingInstrument"]["method"].string
+        
         
         if payments == "BOLETO" {
             self.paymentMethod = .bankBill
         } else if payments == "CREDIT_CARD" {
             self.paymentMethod = .creditCard
+        } else if payments == "ONLINE_BANK_DEBIT" {
+            self.paymentMethod = .onlineBankDebit
         }
         
         let rStatus = json["status"].string
@@ -63,6 +68,9 @@ class Order {
         
         
         self.updatedAt = formatter.date(from: strTime!)
+        
+        
+        self.price = json["amount"]["total"].double
     }
     
 }
