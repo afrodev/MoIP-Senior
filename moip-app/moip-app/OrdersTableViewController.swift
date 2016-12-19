@@ -54,7 +54,7 @@ class OrdersTableViewController: UITableViewController, OrderProtocol {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let order = orderArray[indexPath.row]
-//        print("\(order.ownID) - \(order.email) - \(order.status) - \(order.paymentMethod) - \(order.price)")
+
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellOrderNew", for: indexPath) as! OrderTableViewCell
         
         cell.labelCreateDate.text = formatDate(date: order.updatedAt!)

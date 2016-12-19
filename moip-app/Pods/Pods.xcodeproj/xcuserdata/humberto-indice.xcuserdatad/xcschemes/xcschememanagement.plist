@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>JDStatusBarNotification.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-moip-app.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -42,12 +47,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>14FAE7362773F6A636A2FAA45D2C0C29</key>
+		<key>0D83E505BF1E81A4AAA9A3A5CAA45E9E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>176C61C2B2BEE8CBE4BBE2FE412AE85C</key>
+		<key>13FE55999E006CE42ECCE7A2BDDB0BA0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7A959E4C40D9C4293E0B8FB3E7ABE181</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -57,7 +67,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BBC1689A3E1F2C408CC51B3D81FF4232</key>
+		<key>A3D183A62F3A178987140949DA4DEDDC</key>
 		<dict>
 			<key>primary</key>
 			<true/>

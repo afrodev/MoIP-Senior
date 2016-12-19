@@ -11,7 +11,8 @@ import UIKit
 class CustomTextField: UITextField {
     let inset: CGFloat = 50
     var leftImage: UIImage?
-    
+    let padding = UIEdgeInsets(top: 0, left: 50, bottom: 0, right: 0);
+
     
     
     // Only override draw() if you perform custom drawing.
@@ -24,9 +25,11 @@ class CustomTextField: UITextField {
         imageView.image = leftImage
         self.leftView = imageView
         
-        setBottomBorder(.white)
-        self.clearsOnBeginEditing = true
         
+        
+        setBottomBorder(.white)
+        
+        self.attributedPlaceholder = NSAttributedString(string: self.placeholder!, attributes: [NSForegroundColorAttributeName : UIColor.white])
     }
     
     
@@ -44,16 +47,19 @@ class CustomTextField: UITextField {
     }
     
     override func textRect(forBounds bounds: CGRect) -> CGRect {
-        return bounds.insetBy(dx: inset, dy: 0)
+        return UIEdgeInsetsInsetRect(bounds, padding)
     }
     
     override func editingRect(forBounds bounds: CGRect) -> CGRect {
-        return bounds.insetBy(dx: inset, dy: 0)
+        return UIEdgeInsetsInsetRect(bounds, padding)
     }
     
     override func placeholderRect(forBounds bounds: CGRect) -> CGRect {
-        return bounds.insetBy(dx: inset, dy: 0)
+        return UIEdgeInsetsInsetRect(bounds, padding)
     }
+    
+    
+    
     
     
     
