@@ -45,11 +45,18 @@ class LoginViewController: UIViewController, LoginProtocol {
         let email = emailTextfield.text
         let password = passwordTextField.text
         
+        if password!.isEmpty || email!.isEmpty {
+            JDStatusBarNotification.show(withStatus: "campo não digitado corretamente, digite novamente", dismissAfter: 3, styleName: JDStatusBarStyleWarning)
+            return
+        }
+        
+        
         if isValidEmail(testStr: email!) {
             SVProgressHUD.show()
             controller.login(email!, password: password!)
         } else {
-            JDStatusBarNotification.show(withStatus: "email inválido, digite novamente", dismissAfter: 3, styleName: JDStatusBarStyleWarning)
+            JDStatusBarNotification.show(withStatus: "email inválido, digite corretamente", dismissAfter: 3, styleName: JDStatusBarStyleWarning)
+            return
         }
         
         
