@@ -8,6 +8,7 @@ target 'moip-app' do
   # Pods for moip-app
   pod 'SwiftyJSON'
   pod 'Alamofire'
+  pod 'SVProgressHUD'
 
   target 'moip-appTests' do
     inherit! :search_paths

@@ -26,29 +26,16 @@ class OrderController: NSObject {
             "Authorization": "OAuth \(access_token)"
         ]
         
-        /*
-         
-         what i need:
-         - ownId
-         - email
-         - payment method (enum)
-         - status (enum)
-         - createdAt (date)
-         - price
-         */
         Alamofire.request("https://sandbox.moip.com.br/v2/orders?limit=100", headers: headers).responseJSON { response in
             
             let json = JSON(data: response.data!)
             let orders = json["orders"]
-            
             
             for o in orders {
                 let order = Order(json: o.1)
                 
                 arrayOrder.append(order)
             }
-            
-            
             
             self.delegate?.finishOrders(arrayOrder)
         }

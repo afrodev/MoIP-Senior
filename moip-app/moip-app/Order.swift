@@ -34,7 +34,6 @@ class Order {
     
     init(json: JSON) {
         
-        print(json)
         self.ownID = json["ownId"].string
         self.email = json["customer"]["email"].string
         

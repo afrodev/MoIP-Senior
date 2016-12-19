@@ -8,7 +8,7 @@
 
 import UIKit
 
-class OrdersTableViewController: UITableViewController,  OrderProtocol {
+class OrdersTableViewController: UITableViewController, OrderProtocol {
 
     var access_token: String = ""
     let controller = OrderController()
@@ -16,19 +16,19 @@ class OrdersTableViewController: UITableViewController,  OrderProtocol {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        //self.tableView.contentInset.top = 20
         print("Access Token: \(access_token)")
-        
-        self.navigationController?.navigationBar.topItem?.title = "Vendas"
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
         self.navigationController?.navigationBar.barTintColor = UIColor(colorLiteralRed: 0, green: 153/255.0, blue: 224/255.0, alpha: 1.0)
+        
+        self.navigationItem.rightBarButtonItem?.tintColor = .white
+        self.navigationItem.setHidesBackButton(true, animated: false)
         
         let a = UINib(nibName: "OrderCell", bundle: nil)
         self.tableView.register(a, forCellReuseIdentifier: "cellOrderNew")
         
         controller.delegate = self
         controller.order(access_token)
-
     }
 
     override func didReceiveMemoryWarning() {
@@ -38,12 +38,10 @@ class OrdersTableViewController: UITableViewController,  OrderProtocol {
 
     // MARK: - Table view data source
     override func numberOfSections(in tableView: UITableView) -> Int {
-
         return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-
         return orderArray.count
     }
     
@@ -67,9 +65,6 @@ class OrdersTableViewController: UITableViewController,  OrderProtocol {
         cell.imageViewPaymentMethod.image = imagePayment(paymentMethod: order.paymentMethod!)
         cell.imageViewStatus.image = imageStatus(status: order.status!)
         
-        //cell.imageViewPaymentMethod
-        //cell.imageViewStatus
-        
         return cell
     }
     
@@ -77,6 +72,10 @@ class OrdersTableViewController: UITableViewController,  OrderProtocol {
         return 128.0
     }
     
+    @IBAction func actionExit(_ sender: Any) {
+        self.performSegue(withIdentifier: "segueLoginViewController", sender: self)
+    }
+
     func imagePayment(paymentMethod: PaymentMethod) -> UIImage {
         switch paymentMethod {
         case .bankBill:
@@ -104,12 +103,13 @@ class OrdersTableViewController: UITableViewController,  OrderProtocol {
         }
     }
     
+    
+    
     func formatDate(date: Date) -> String {
         let formatter = DateFormatter()
         formatter.dateFormat = "dd/MM/yyyy"
         
         return formatter.string(from: date)
-        
     }
     
 }
