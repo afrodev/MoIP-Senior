@@ -36,7 +36,7 @@ class OrderController: NSObject {
          - createdAt (date)
          - price
          */
-        Alamofire.request("https://sandbox.moip.com.br/v2/orders?limit=10", headers: headers).responseJSON { response in
+        Alamofire.request("https://sandbox.moip.com.br/v2/orders?limit=100", headers: headers).responseJSON { response in
             
             let json = JSON(data: response.data!)
             let orders = json["orders"]

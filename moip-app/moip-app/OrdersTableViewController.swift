@@ -55,17 +55,17 @@ class OrdersTableViewController: UITableViewController,  OrderProtocol {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cellOrderNew", for: indexPath) as! OrderTableViewCell
-        
         let order = orderArray[indexPath.row]
+//        print("\(order.ownID) - \(order.email) - \(order.status) - \(order.paymentMethod) - \(order.price)")
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cellOrderNew", for: indexPath) as! OrderTableViewCell
         
         cell.labelCreateDate.text = formatDate(date: order.updatedAt!)
         cell.labelEmail.text = order.email
         cell.labelId.text = order.ownID
         cell.labelPrice.text = "R$ \(order.price!)"
         
-        
         cell.imageViewPaymentMethod.image = imagePayment(paymentMethod: order.paymentMethod!)
+        cell.imageViewStatus.image = imageStatus(status: order.status!)
         
         //cell.imageViewPaymentMethod
         //cell.imageViewStatus
@@ -84,7 +84,23 @@ class OrdersTableViewController: UITableViewController,  OrderProtocol {
         case .creditCard:
             return UIImage(named: "card-icon")!
         case .onlineBankDebit:
-            return UIImage(named: "Bank-50")!
+            return UIImage(named: "online-bank-icon")!
+        case .debitCard:
+            return UIImage(named: "debit-card-icon")!
+        }
+    }
+    
+    
+    func imageStatus(status: Status) -> UIImage {
+        switch status {
+        case .notPaid:
+            return UIImage(named: "no-paid-icon")!
+        case .paid:
+            return UIImage(named: "paid-icon")!
+        case .reverted:
+            return UIImage(named: "revert-icon")!
+        case .waiting:
+            return UIImage(named: "waiting-icon")!
         }
     }
     

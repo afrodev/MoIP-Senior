@@ -13,6 +13,7 @@ enum PaymentMethod {
     case bankBill
     case creditCard
     case onlineBankDebit
+    case debitCard
 }
 
 enum Status {
@@ -46,6 +47,8 @@ class Order {
             self.paymentMethod = .creditCard
         } else if payments == "ONLINE_BANK_DEBIT" {
             self.paymentMethod = .onlineBankDebit
+        } else if payments == "DEBIT_CARD" {
+            self.paymentMethod = .debitCard
         }
         
         let rStatus = json["status"].string
