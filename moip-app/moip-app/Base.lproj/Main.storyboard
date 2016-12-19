@@ -77,6 +77,9 @@
                                         <integer key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="actionNewAccount:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UNv-aB-a9e"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="La9-mV-Vky">
                                 <rect key="frame" x="42" y="351" width="236" height="29"/>
@@ -99,6 +102,9 @@
                                         <integer key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="actionForgetMyPassword:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UdN-q2-xcs"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0017864720430225134" green="0.59868514537811279" blue="0.87718492746353149" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

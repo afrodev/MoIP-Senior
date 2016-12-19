@@ -26,7 +26,6 @@ class CustomTextField: UITextField {
         self.leftView = imageView
         
         
-        
         setBottomBorder(.white)
         
         self.attributedPlaceholder = NSAttributedString(string: self.placeholder!, attributes: [NSForegroundColorAttributeName : UIColor.white])
