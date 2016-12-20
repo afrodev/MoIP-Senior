@@ -31,9 +31,6 @@ class LoginViewController: UIViewController, LoginProtocol {
         emailTextfield.leftImage = UIImage(named: "email-icon")
         passwordTextField.leftImage = UIImage(named: "password-icon")
         
-        //emailTextfield.text = "integracao@labs.moip.com.br"
-        //passwordTextField.text = "testemoip"
-        
         //controller.login(username: "integracao@labs.moip.com.br", password: "testemoip")
     }
     
