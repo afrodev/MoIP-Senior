@@ -33,7 +33,6 @@ class OrdersTableViewController: UITableViewController, OrderProtocol {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     // MARK: - Table view data source
@@ -55,15 +54,9 @@ class OrdersTableViewController: UITableViewController, OrderProtocol {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let order = orderArray[indexPath.row]
 
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cellOrderNew", for: indexPath) as! OrderTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cellOrderNew", for: indexPath) as! OrderCell
         
-        cell.labelCreateDate.text = formatDate(date: order.updatedAt!)
-        cell.labelEmail.text = order.email
-        cell.labelId.text = order.ownID
-        cell.labelPrice.text = "R$ \(order.price!)"
-        
-        cell.imageViewPaymentMethod.image = imagePayment(paymentMethod: order.paymentMethod!)
-        cell.imageViewStatus.image = imageStatus(status: order.status!)
+        cell.configure(order: order)
         
         return cell
     }
@@ -76,40 +69,6 @@ class OrdersTableViewController: UITableViewController, OrderProtocol {
         self.performSegue(withIdentifier: "segueLoginViewController", sender: self)
     }
 
-    func imagePayment(paymentMethod: PaymentMethod) -> UIImage {
-        switch paymentMethod {
-        case .bankBill:
-            return UIImage(named: "boleto-icon")!
-        case .creditCard:
-            return UIImage(named: "card-icon")!
-        case .onlineBankDebit:
-            return UIImage(named: "online-bank-icon")!
-        case .debitCard:
-            return UIImage(named: "debit-card-icon")!
-        }
-    }
-    
-    
-    func imageStatus(status: Status) -> UIImage {
-        switch status {
-        case .notPaid:
-            return UIImage(named: "no-paid-icon")!
-        case .paid:
-            return UIImage(named: "paid-icon")!
-        case .reverted:
-            return UIImage(named: "revert-icon")!
-        case .waiting:
-            return UIImage(named: "waiting-icon")!
-        }
-    }
-    
-    
-    
-    func formatDate(date: Date) -> String {
-        let formatter = DateFormatter()
-        formatter.dateFormat = "dd/MM/yyyy"
-        
-        return formatter.string(from: date)
-    }
+
     
 }

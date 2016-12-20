@@ -25,10 +25,11 @@ class CustomTextField: UITextField {
         imageView.image = leftImage
         self.leftView = imageView
         
-        
         setBottomBorder(.white)
         
-        self.attributedPlaceholder = NSAttributedString(string: self.placeholder!, attributes: [NSForegroundColorAttributeName : UIColor.white])
+        if let _placeholder = self.placeholder {
+            self.attributedPlaceholder = NSAttributedString(string: _placeholder, attributes: [NSForegroundColorAttributeName : UIColor.white])
+        }
     }
     
     

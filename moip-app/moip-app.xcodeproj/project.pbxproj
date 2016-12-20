@@ -22,7 +22,7 @@
 		F246DB011DFD6CC0007E9991 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F246DB001DFD6CC0007E9991 /* LoginController.swift */; };
 		F2B5C6261DFD95FC00573B9E /* OrdersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B5C6251DFD95FC00573B9E /* OrdersTableViewController.swift */; };
 		F2B5C6281DFDAAE300573B9E /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B5C6271DFDAAE300573B9E /* CustomTextField.swift */; };
-		F2DE95E61E074DC700D865F4 /* OrderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DE95E51E074DC700D865F4 /* OrderTableViewCell.swift */; };
+		F2DE95E61E074DC700D865F4 /* OrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DE95E51E074DC700D865F4 /* OrderCell.swift */; };
 		F2DE95EA1E07512900D865F4 /* OrderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2DE95E91E07512900D865F4 /* OrderCell.xib */; };
 /* End PBXBuildFile section */
 
@@ -71,7 +71,7 @@
 		F246DB001DFD6CC0007E9991 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		F2B5C6251DFD95FC00573B9E /* OrdersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrdersTableViewController.swift; sourceTree = "<group>"; };
 		F2B5C6271DFDAAE300573B9E /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
-		F2DE95E51E074DC700D865F4 /* OrderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderTableViewCell.swift; sourceTree = "<group>"; };
+		F2DE95E51E074DC700D865F4 /* OrderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderCell.swift; sourceTree = "<group>"; };
 		F2DE95E91E07512900D865F4 /* OrderCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OrderCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -185,7 +185,7 @@
 				F246DAD11DFD66ED007E9991 /* LoginViewController.swift */,
 				F2B5C6251DFD95FC00573B9E /* OrdersTableViewController.swift */,
 				F2B5C6271DFDAAE300573B9E /* CustomTextField.swift */,
-				F2DE95E51E074DC700D865F4 /* OrderTableViewCell.swift */,
+				F2DE95E51E074DC700D865F4 /* OrderCell.swift */,
 				F2DE95E91E07512900D865F4 /* OrderCell.xib */,
 			);
 			name = view;
@@ -500,7 +500,7 @@
 			files = (
 				F234F5901DFDF74C0070C530 /* OrderController.swift in Sources */,
 				F2B5C6261DFD95FC00573B9E /* OrdersTableViewController.swift in Sources */,
-				F2DE95E61E074DC700D865F4 /* OrderTableViewCell.swift in Sources */,
+				F2DE95E61E074DC700D865F4 /* OrderCell.swift in Sources */,
 				F246DAD21DFD66ED007E9991 /* LoginViewController.swift in Sources */,
 				F246DB011DFD6CC0007E9991 /* LoginController.swift in Sources */,
 				F246DAD01DFD66ED007E9991 /* AppDelegate.swift in Sources */,

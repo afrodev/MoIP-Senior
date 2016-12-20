@@ -19,9 +19,7 @@ class LoginViewController: UIViewController, LoginProtocol {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
        
-        
         // Dimiss Keyboard touching anywhere
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
@@ -39,24 +37,18 @@ class LoginViewController: UIViewController, LoginProtocol {
     }
     
     @IBAction func actionLogin(_ sender: Any) {
-        let email = emailTextfield.text
-        let password = passwordTextField.text
-        
-        if password!.isEmpty || email!.isEmpty {
-            JDStatusBarNotification.show(withStatus: "campo não digitado corretamente, digite novamente", dismissAfter: 3, styleName: JDStatusBarStyleWarning)
+        guard let email = emailTextfield.text, isValidEmail(testStr: email) else {
+            JDStatusBarNotification.show(withStatus: "email não digitado corretamente, digite novamente", dismissAfter: 3, styleName: JDStatusBarStyleWarning)
             return
         }
         
-        
-        if isValidEmail(testStr: email!) {
-            SVProgressHUD.show()
-            controller.login(email!, password: password!)
-        } else {
-            JDStatusBarNotification.show(withStatus: "email inválido, digite corretamente", dismissAfter: 3, styleName: JDStatusBarStyleWarning)
+        guard let password = passwordTextField.text, !password.isEmpty  else {
+            JDStatusBarNotification.show(withStatus: "senha não digitada corretamente, digite novamente", dismissAfter: 3, styleName: JDStatusBarStyleWarning)
             return
         }
         
-        
+        SVProgressHUD.show()
+        controller.login(email, password: password)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -82,6 +74,8 @@ class LoginViewController: UIViewController, LoginProtocol {
         let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
         return emailTest.evaluate(with: testStr)
     }
+    
+    
 
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

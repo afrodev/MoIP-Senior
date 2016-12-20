@@ -32,6 +32,8 @@ class Order {
     var price: Double?
     
     
+    
+    
     init(json: JSON) {
         self.ownID = json["ownId"].string
         self.email = json["customer"]["email"].string
