@@ -28,7 +28,11 @@ class OrderController: NSObject {
         
         Alamofire.request("https://sandbox.moip.com.br/v2/orders?limit=100", headers: headers).responseJSON { response in
             
-            let json = JSON(data: response.data!)
+            guard let data = response.data else {
+                return
+            }
+            
+            let json = JSON(data: data)
             let orders = json["orders"]
             
             for o in orders {

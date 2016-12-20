@@ -30,13 +30,14 @@ class LoginController: NSObject {
         
         Alamofire.request("https://sandbox.moip.com.br/oauth/accesstoken", method: .post, parameters: parameters, encoding: JSONEncoding.default).responseJSON { (response) in
             
-            if response.data != nil {
-                
-                let json = JSON(data: response.data!)
-                let access_token = json["access_token"]
-                
-                self.delegateLogin?.finishLogin("\(access_token)")
+            guard let data = response.data else {
+                return
             }
+            
+            let json = JSON(data: data)
+            let access_token = json["access_token"]
+                
+            self.delegateLogin?.finishLogin("\(access_token)")
             
         }
     }
