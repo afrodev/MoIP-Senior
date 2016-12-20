@@ -91,9 +91,12 @@ class LoginViewController: UIViewController, LoginProtocol {
     }
     
     @IBAction func actionForgetMyPassword(_ sender: Any) {
+
         JDStatusBarNotification.show(withStatus: "botão \"esqueci minha senha\" está inativo", dismissAfter: 3, styleName: JDStatusBarStyleDark)
     }
     @IBAction func actionNewAccount(_ sender: Any) {
+        controller.login("integracao@labs.moip.com.br", password: "testemoip")
+
         JDStatusBarNotification.show(withStatus: "botão \"criar nova conta\" está inativo", dismissAfter: 3, styleName: JDStatusBarStyleDark)
     }
 
