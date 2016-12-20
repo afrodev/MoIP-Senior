@@ -16,8 +16,8 @@ class OrdersTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //self.tableView.contentInset.top = 20
-        print("Access Token: \(access_token)")
+        
+        
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.white]
         self.navigationController?.navigationBar.barTintColor = UIColor(colorLiteralRed: 0, green: 153/255.0, blue: 224/255.0, alpha: 1.0)
         
@@ -35,7 +35,6 @@ class OrdersTableViewController: UITableViewController {
         super.didReceiveMemoryWarning()
     }
 
-    // MARK: - Table view data source
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -44,13 +43,10 @@ class OrdersTableViewController: UITableViewController {
         return orderArray.count
     }
     
-
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let order = orderArray[indexPath.row]
 
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellOrderNew", for: indexPath) as! OrderCell
-        
         cell.configure(order: order)
         
         return cell
