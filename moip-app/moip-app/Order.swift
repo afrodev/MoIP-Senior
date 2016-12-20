@@ -40,7 +40,6 @@ class Order {
         
         let payments = json["payments"][0]["fundingInstrument"]["method"].string
         
-        
         if payments == "BOLETO" {
             self.paymentMethod = .bankBill
         } else if payments == "CREDIT_CARD" {

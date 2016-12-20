@@ -14,7 +14,9 @@ protocol OrderProtocol {
     func finishOrders(_ list: [Order])
 }
 
-class OrderService: NSObject {
+
+
+class OrderService {
     var delegate: OrderProtocol?
     
     

@@ -156,10 +156,10 @@
 		F246DACE1DFD66ED007E9991 /* moip-app */ = {
 			isa = PBXGroup;
 			children = (
-				F246DAFF1DFD6C23007E9991 /* network */,
-				CDBD53111E09CC77000D72C6 /* viewcontrollers */,
-				F246DAFE1DFD6C1A007E9991 /* view */,
 				F246DAFD1DFD6C12007E9991 /* model */,
+				F246DAFF1DFD6C23007E9991 /* network */,
+				F246DAFE1DFD6C1A007E9991 /* view */,
+				CDBD53111E09CC77000D72C6 /* viewcontrollers */,
 				F246DACF1DFD66ED007E9991 /* AppDelegate.swift */,
 				F246DAD31DFD66ED007E9991 /* Main.storyboard */,
 				F246DAD61DFD66ED007E9991 /* Assets.xcassets */,

@@ -14,7 +14,7 @@ protocol LoginProtocol {
     func finishLogin(_ access_token: String)
 }
 
-class LoginService: NSObject {
+class LoginService {
     var delegateLogin: LoginProtocol?
     var delegateOrder: OrderProtocol?
     
@@ -38,7 +38,6 @@ class LoginService: NSObject {
             let access_token = json["access_token"]
                 
             self.delegateLogin?.finishLogin("\(access_token)")
-            
         }
     }
     
