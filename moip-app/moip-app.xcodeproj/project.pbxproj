@@ -9,8 +9,10 @@
 /* Begin PBXBuildFile section */
 		350AE84139ADC174BAE116FD /* Pods_moip_app.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33560CD65F3FE17071CB846D /* Pods_moip_app.framework */; };
 		6BED57DA96D6B4C3F3A49870 /* Pods_moip_appUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A89657314691A9025575AE7 /* Pods_moip_appUITests.framework */; };
+		CDBD530B1E09C92B000D72C6 /* OrderTableViewController+OrderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBD530A1E09C92B000D72C6 /* OrderTableViewController+OrderProtocol.swift */; };
+		CDBD530F1E09CA66000D72C6 /* LoginViewController+LoginProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDBD530E1E09CA66000D72C6 /* LoginViewController+LoginProtocol.swift */; };
 		ECB0AB55BD47CF3D0FC684B4 /* Pods_moip_appTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F07EBBA3C740C71D1C937E0F /* Pods_moip_appTests.framework */; };
-		F234F5901DFDF74C0070C530 /* OrderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F234F58F1DFDF74C0070C530 /* OrderController.swift */; };
+		F234F5901DFDF74C0070C530 /* OrderService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F234F58F1DFDF74C0070C530 /* OrderService.swift */; };
 		F234F5921DFDF88C0070C530 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = F234F5911DFDF88C0070C530 /* Order.swift */; };
 		F246DAD01DFD66ED007E9991 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F246DACF1DFD66ED007E9991 /* AppDelegate.swift */; };
 		F246DAD21DFD66ED007E9991 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F246DAD11DFD66ED007E9991 /* LoginViewController.swift */; };
@@ -19,7 +21,7 @@
 		F246DADA1DFD66ED007E9991 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F246DAD81DFD66ED007E9991 /* LaunchScreen.storyboard */; };
 		F246DAE51DFD66ED007E9991 /* moip_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F246DAE41DFD66ED007E9991 /* moip_appTests.swift */; };
 		F246DAF01DFD66ED007E9991 /* moip_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F246DAEF1DFD66ED007E9991 /* moip_appUITests.swift */; };
-		F246DB011DFD6CC0007E9991 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F246DB001DFD6CC0007E9991 /* LoginController.swift */; };
+		F246DB011DFD6CC0007E9991 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F246DB001DFD6CC0007E9991 /* LoginService.swift */; };
 		F2B5C6261DFD95FC00573B9E /* OrdersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B5C6251DFD95FC00573B9E /* OrdersTableViewController.swift */; };
 		F2B5C6281DFDAAE300573B9E /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2B5C6271DFDAAE300573B9E /* CustomTextField.swift */; };
 		F2DE95E61E074DC700D865F4 /* OrderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DE95E51E074DC700D865F4 /* OrderCell.swift */; };
@@ -52,8 +54,10 @@
 		74AFBFE3A604C25B2D14177E /* Pods-moip-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-moip-app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-moip-app/Pods-moip-app.debug.xcconfig"; sourceTree = "<group>"; };
 		A6F7EF9D83A789105EA66FE9 /* Pods-moip-appUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-moip-appUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-moip-appUITests/Pods-moip-appUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C9E3F3ACE36DF1A1440B3DEE /* Pods-moip-appTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-moip-appTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-moip-appTests/Pods-moip-appTests.release.xcconfig"; sourceTree = "<group>"; };
+		CDBD530A1E09C92B000D72C6 /* OrderTableViewController+OrderProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OrderTableViewController+OrderProtocol.swift"; sourceTree = "<group>"; };
+		CDBD530E1E09CA66000D72C6 /* LoginViewController+LoginProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LoginViewController+LoginProtocol.swift"; sourceTree = "<group>"; };
 		F07EBBA3C740C71D1C937E0F /* Pods_moip_appTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_moip_appTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F234F58F1DFDF74C0070C530 /* OrderController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderController.swift; sourceTree = "<group>"; };
+		F234F58F1DFDF74C0070C530 /* OrderService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderService.swift; sourceTree = "<group>"; };
 		F234F5911DFDF88C0070C530 /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		F246DACC1DFD66ED007E9991 /* moip-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "moip-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F246DACF1DFD66ED007E9991 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -68,7 +72,7 @@
 		F246DAEB1DFD66ED007E9991 /* moip-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "moip-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F246DAEF1DFD66ED007E9991 /* moip_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = moip_appUITests.swift; sourceTree = "<group>"; };
 		F246DAF11DFD66ED007E9991 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F246DB001DFD6CC0007E9991 /* LoginController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		F246DB001DFD6CC0007E9991 /* LoginService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
 		F2B5C6251DFD95FC00573B9E /* OrdersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrdersTableViewController.swift; sourceTree = "<group>"; };
 		F2B5C6271DFDAAE300573B9E /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		F2DE95E51E074DC700D865F4 /* OrderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderCell.swift; sourceTree = "<group>"; };
@@ -116,6 +120,17 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		CDBD53111E09CC77000D72C6 /* viewcontrollers */ = {
+			isa = PBXGroup;
+			children = (
+				F246DAD11DFD66ED007E9991 /* LoginViewController.swift */,
+				CDBD530E1E09CA66000D72C6 /* LoginViewController+LoginProtocol.swift */,
+				F2B5C6251DFD95FC00573B9E /* OrdersTableViewController.swift */,
+				CDBD530A1E09C92B000D72C6 /* OrderTableViewController+OrderProtocol.swift */,
+			);
+			name = viewcontrollers;
+			sourceTree = "<group>";
+		};
 		F246DAC31DFD66EC007E9991 = {
 			isa = PBXGroup;
 			children = (
@@ -141,7 +156,8 @@
 		F246DACE1DFD66ED007E9991 /* moip-app */ = {
 			isa = PBXGroup;
 			children = (
-				F246DAFF1DFD6C23007E9991 /* controller */,
+				F246DAFF1DFD6C23007E9991 /* network */,
+				CDBD53111E09CC77000D72C6 /* viewcontrollers */,
 				F246DAFE1DFD6C1A007E9991 /* view */,
 				F246DAFD1DFD6C12007E9991 /* model */,
 				F246DACF1DFD66ED007E9991 /* AppDelegate.swift */,
@@ -182,8 +198,6 @@
 		F246DAFE1DFD6C1A007E9991 /* view */ = {
 			isa = PBXGroup;
 			children = (
-				F246DAD11DFD66ED007E9991 /* LoginViewController.swift */,
-				F2B5C6251DFD95FC00573B9E /* OrdersTableViewController.swift */,
 				F2B5C6271DFDAAE300573B9E /* CustomTextField.swift */,
 				F2DE95E51E074DC700D865F4 /* OrderCell.swift */,
 				F2DE95E91E07512900D865F4 /* OrderCell.xib */,
@@ -191,13 +205,13 @@
 			name = view;
 			sourceTree = "<group>";
 		};
-		F246DAFF1DFD6C23007E9991 /* controller */ = {
+		F246DAFF1DFD6C23007E9991 /* network */ = {
 			isa = PBXGroup;
 			children = (
-				F246DB001DFD6CC0007E9991 /* LoginController.swift */,
-				F234F58F1DFDF74C0070C530 /* OrderController.swift */,
+				F246DB001DFD6CC0007E9991 /* LoginService.swift */,
+				F234F58F1DFDF74C0070C530 /* OrderService.swift */,
 			);
-			name = controller;
+			name = network;
 			sourceTree = "<group>";
 		};
 		FAA9B95155FE8967477BA1F8 /* Frameworks */ = {
@@ -498,11 +512,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F234F5901DFDF74C0070C530 /* OrderController.swift in Sources */,
+				F234F5901DFDF74C0070C530 /* OrderService.swift in Sources */,
+				CDBD530B1E09C92B000D72C6 /* OrderTableViewController+OrderProtocol.swift in Sources */,
 				F2B5C6261DFD95FC00573B9E /* OrdersTableViewController.swift in Sources */,
 				F2DE95E61E074DC700D865F4 /* OrderCell.swift in Sources */,
+				CDBD530F1E09CA66000D72C6 /* LoginViewController+LoginProtocol.swift in Sources */,
 				F246DAD21DFD66ED007E9991 /* LoginViewController.swift in Sources */,
-				F246DB011DFD6CC0007E9991 /* LoginController.swift in Sources */,
+				F246DB011DFD6CC0007E9991 /* LoginService.swift in Sources */,
 				F246DAD01DFD66ED007E9991 /* AppDelegate.swift in Sources */,
 				F2B5C6281DFDAAE300573B9E /* CustomTextField.swift in Sources */,
 				F234F5921DFDF88C0070C530 /* Order.swift in Sources */,

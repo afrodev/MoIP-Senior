@@ -8,10 +8,10 @@
 
 import UIKit
 
-class OrdersTableViewController: UITableViewController, OrderProtocol {
+class OrdersTableViewController: UITableViewController {
 
     var access_token: String = ""
-    let controller = OrderController()
+    let service = OrderService()
     var orderArray: [Order] = []
     
     override func viewDidLoad() {
@@ -27,8 +27,8 @@ class OrdersTableViewController: UITableViewController, OrderProtocol {
         let a = UINib(nibName: "OrderCell", bundle: nil)
         self.tableView.register(a, forCellReuseIdentifier: "cellOrderNew")
         
-        controller.delegate = self
-        controller.order(access_token)
+        service.delegate = self
+        service.order(access_token)
     }
 
     override func didReceiveMemoryWarning() {
@@ -44,11 +44,6 @@ class OrdersTableViewController: UITableViewController, OrderProtocol {
         return orderArray.count
     }
     
-    func finishOrders(_ list: [Order]) {
-        orderArray = list
-        
-        self.tableView.reloadData()
-    }
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {

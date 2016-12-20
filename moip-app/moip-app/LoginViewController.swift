@@ -10,12 +10,12 @@ import UIKit
 import SVProgressHUD
 import JDStatusBarNotification
 
-class LoginViewController: UIViewController, LoginProtocol {
+class LoginViewController: UIViewController {
 
     @IBOutlet weak var emailTextfield: CustomTextField!
     @IBOutlet weak var passwordTextField: CustomTextField!
     
-    let controller = LoginController()
+    let service = LoginService()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,12 +24,11 @@ class LoginViewController: UIViewController, LoginProtocol {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
 
-        controller.delegateLogin = self
+        service.delegateLogin = self
 
         emailTextfield.leftImage = UIImage(named: "email-icon")
         passwordTextField.leftImage = UIImage(named: "password-icon")
         
-        //controller.login(username: "integracao@labs.moip.com.br", password: "testemoip")
     }
     
     func dismissKeyboard() {
@@ -48,7 +47,7 @@ class LoginViewController: UIViewController, LoginProtocol {
         }
         
         SVProgressHUD.show()
-        controller.login(email, password: password)
+        service.login(email, password: password)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -59,24 +58,12 @@ class LoginViewController: UIViewController, LoginProtocol {
         self.navigationController?.navigationBar.isHidden = false
     }
     
-    func finishLogin(_ access_token: String) {
-        SVProgressHUD.dismiss(withDelay: 0.8)
-        if access_token != "null" {
-            self.performSegue(withIdentifier: "segueOrdersTableViewController", sender: access_token)
-        } else {
-            JDStatusBarNotification.show(withStatus: "usuário não encontrado", dismissAfter: 3, styleName: JDStatusBarStyleError)
-        }
-        
-    }
-    
+
     func isValidEmail(testStr: String) -> Bool {
         let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
         let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
         return emailTest.evaluate(with: testStr)
     }
-    
-    
-
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let viewController2 = segue.destination as? OrdersTableViewController {
@@ -85,12 +72,10 @@ class LoginViewController: UIViewController, LoginProtocol {
     }
     
     @IBAction func actionForgetMyPassword(_ sender: Any) {
-
         JDStatusBarNotification.show(withStatus: "botão \"esqueci minha senha\" está inativo", dismissAfter: 3, styleName: JDStatusBarStyleDark)
     }
     @IBAction func actionNewAccount(_ sender: Any) {
-        controller.login("integracao@labs.moip.com.br", password: "testemoip")
-
+        service.login("integracao@labs.moip.com.br", password: "testemoip")
         JDStatusBarNotification.show(withStatus: "botão \"criar nova conta\" está inativo", dismissAfter: 3, styleName: JDStatusBarStyleDark)
     }
 

@@ -14,9 +14,6 @@ class CustomTextField: UITextField {
     let padding = UIEdgeInsets(top: 0, left: 50, bottom: 0, right: 0);
 
     
-    
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
     override func draw(_ rect: CGRect) {
         self.leftViewMode = .always
         

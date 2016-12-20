@@ -14,7 +14,7 @@ protocol LoginProtocol {
     func finishLogin(_ access_token: String)
 }
 
-class LoginController: NSObject {
+class LoginService: NSObject {
     var delegateLogin: LoginProtocol?
     var delegateOrder: OrderProtocol?
     

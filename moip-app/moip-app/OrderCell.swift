@@ -65,8 +65,6 @@ class OrderCell: UITableViewCell {
     
     func imagePayment(paymentMethod: PaymentMethod) -> UIImage {
         var _image: UIImage? = nil
-
-        
         
         switch paymentMethod {
         case .bankBill:
@@ -84,8 +82,6 @@ class OrderCell: UITableViewCell {
         }
         
         return image
-        
-        
     }
     
     

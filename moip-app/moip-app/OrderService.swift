@@ -14,7 +14,7 @@ protocol OrderProtocol {
     func finishOrders(_ list: [Order])
 }
 
-class OrderController: NSObject {
+class OrderService: NSObject {
     var delegate: OrderProtocol?
     
     
@@ -31,6 +31,7 @@ class OrderController: NSObject {
             guard let data = response.data else {
                 return
             }
+
             
             let json = JSON(data: data)
             let orders = json["orders"]
