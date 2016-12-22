@@ -10,14 +10,14 @@ import Foundation
 import Alamofire
 import SwiftyJSON
 
-protocol OrderProtocol {
+protocol OrderProtocol: class {
     func finishOrders(_ list: [Order])
 }
 
 
 
 class OrderService {
-    var delegate: OrderProtocol?
+     weak var delegate: OrderProtocol?
     
     
     func order(_ access_token: String) {

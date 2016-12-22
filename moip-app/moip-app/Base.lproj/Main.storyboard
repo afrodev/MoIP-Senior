@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="d3I-WQ-xLT">
-    <device id="ipad12_9" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="d3I-WQ-xLT">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -20,11 +20,11 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CBk-fs-WMD" customClass="CustomTextField" customModule="moip_app" customModuleProvider="target">
-                                <rect key="frame" x="46" y="420.5" width="932" height="41"/>
+                                <rect key="frame" x="42" y="194" width="236" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="41" id="rqT-4O-wp1"/>
                                 </constraints>
@@ -43,7 +43,7 @@
                                 </variation>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Keq-Gm-ZEs" customClass="CustomTextField" customModule="moip_app" customModuleProvider="target">
-                                <rect key="frame" x="46" y="469.5" width="932" height="41"/>
+                                <rect key="frame" x="42" y="243" width="236" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="41" id="tht-Oe-2bc"/>
                                 </constraints>
@@ -62,7 +62,7 @@
                                 </variation>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2sD-LX-0j5">
-                                <rect key="frame" x="46" y="538.5" width="932" height="41"/>
+                                <rect key="frame" x="42" y="312" width="236" height="41"/>
                                 <color key="backgroundColor" red="0.30804547667503357" green="0.0" blue="0.55422204732894897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="41" id="psA-9e-Dbu"/>
@@ -91,7 +91,7 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="moiplogo" translatesAutoresizingMaskIntoConstraints="NO" id="A92-GB-apl">
-                                <rect key="frame" x="0.0" y="49" width="1024" height="329.5"/>
+                                <rect key="frame" x="0.0" y="49" width="320" height="103"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="A92-GB-apl" secondAttribute="height" multiplier="320:103" id="u9B-ea-C80"/>
                                 </constraints>
@@ -107,7 +107,7 @@
                                 </variation>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ztB-EX-kYr">
-                                <rect key="frame" x="46" y="632.5" width="932" height="58"/>
+                                <rect key="frame" x="42" y="406" width="236" height="58"/>
                                 <color key="backgroundColor" red="0.30804547669999999" green="0.0" blue="0.55422204730000002" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="58" id="4LL-1L-SNt"/>
@@ -144,7 +144,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="La9-mV-Vky">
-                                <rect key="frame" x="394" y="577.5" width="236" height="29"/>
+                                <rect key="frame" x="42" y="351" width="236" height="29"/>
                                 <color key="backgroundColor" red="0.30804547667503357" green="0.0" blue="0.55422204732894897" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="236" id="3WT-fb-Xl6"/>
@@ -220,11 +220,11 @@
                                 <exclude reference="icY-bQ-0PT"/>
                                 <exclude reference="oYQ-Vc-B0o"/>
                                 <exclude reference="v8Z-cV-n4m"/>
-                                <exclude reference="PTS-DN-LXS"/>
-                                <exclude reference="ZPP-Qf-gfg"/>
                                 <exclude reference="BvW-dt-mCh"/>
                                 <exclude reference="Gzd-mc-Zf5"/>
                                 <exclude reference="fgR-x5-JES"/>
+                                <exclude reference="PTS-DN-LXS"/>
+                                <exclude reference="ZPP-Qf-gfg"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular">
@@ -242,11 +242,11 @@
                                 <include reference="icY-bQ-0PT"/>
                                 <include reference="oYQ-Vc-B0o"/>
                                 <include reference="v8Z-cV-n4m"/>
-                                <include reference="PTS-DN-LXS"/>
-                                <include reference="ZPP-Qf-gfg"/>
                                 <include reference="BvW-dt-mCh"/>
                                 <include reference="Gzd-mc-Zf5"/>
                                 <include reference="fgR-x5-JES"/>
+                                <include reference="PTS-DN-LXS"/>
+                                <include reference="ZPP-Qf-gfg"/>
                             </mask>
                         </variation>
                     </view>
@@ -285,9 +285,9 @@
         <!--Vendas-->
         <scene sceneID="yLL-Ep-Ivv">
             <objects>
-                <tableViewController modalPresentationStyle="currentContext" clearsSelectionOnViewWillAppear="NO" id="g3R-LY-v8H" customClass="OrdersTableViewController" customModule="moip_app" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="OrdersTableViewController" modalPresentationStyle="currentContext" clearsSelectionOnViewWillAppear="NO" id="g3R-LY-v8H" customClass="OrdersTableViewController" customModule="moip_app" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="120" sectionHeaderHeight="28" sectionFooterHeight="28" id="Sde-1s-fHj">
-                        <rect key="frame" x="0.0" y="64" width="1024" height="1302"/>
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <connections>

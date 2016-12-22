@@ -10,13 +10,12 @@ import Foundation
 import Alamofire
 import SwiftyJSON
 
-protocol LoginProtocol {
+protocol LoginProtocol: class {
     func finishLogin(_ access_token: String)
 }
 
 class LoginService {
-    var delegateLogin: LoginProtocol?
-    var delegateOrder: OrderProtocol?
+    weak var delegate: LoginProtocol?
     
     func login(_ username: String, password: String) {
         
@@ -37,7 +36,7 @@ class LoginService {
             let json = JSON(data: data)
             let access_token = json["access_token"]
                 
-            self.delegateLogin?.finishLogin("\(access_token)")
+            self.delegate?.finishLogin("\(access_token)")
         }
     }
     

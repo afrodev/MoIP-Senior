@@ -24,7 +24,7 @@ class LoginViewController: UIViewController {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
 
-        service.delegateLogin = self
+        service.delegate = self
 
         emailTextfield.leftImage = UIImage(named: "email-icon")
         passwordTextField.leftImage = UIImage(named: "password-icon")
@@ -58,7 +58,7 @@ class LoginViewController: UIViewController {
         self.navigationController?.navigationBar.isHidden = false
     }
     
-
+    // Verifica se o email é válido
     func isValidEmail(testStr: String) -> Bool {
         let emailRegEx = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
         let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
@@ -75,7 +75,6 @@ class LoginViewController: UIViewController {
         JDStatusBarNotification.show(withStatus: "botão \"esqueci minha senha\" está inativo", dismissAfter: 3, styleName: JDStatusBarStyleDark)
     }
     @IBAction func actionNewAccount(_ sender: Any) {
-        service.login("integracao@labs.moip.com.br", password: "testemoip")
         JDStatusBarNotification.show(withStatus: "botão \"criar nova conta\" está inativo", dismissAfter: 3, styleName: JDStatusBarStyleDark)
     }
 
